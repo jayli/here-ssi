@@ -1,78 +1,85 @@
-#serve-*here*
+# here-ssi
 
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![MIT License][license-image]][license-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][david-image]][david-url]
 [![Gittip][gittip-image]][gittip-url]
+
+[![](https://nodei.co/npm/here-ssi.png)](https://npmjs.org/package/here-ssi)
 
 local static server
 
-## installation
+本地静态服务器
 
-`sudo npm install -g serve-here`
+by 拔赤
 
-## usage
+## 安装 
 
-In your local folder, type `here` and it goes\!
+`sudo npm install -g here-ssi`
 
-## advanced usage
+## 使用
 
-#### specify port to 8888
+在你想要启动服务的目录中，执行`here`
+
+## 高级用法
+
+#### 指定端口 8888
 
 `here -p 8888`
 
-or
+或者
 
 `here --port 8888`
 
-default port is 3000
+默认端口是 3000
 
-#### specify server root directory
+#### 制定服务启动的跟路径
 
 `here -d test`
 
-or
+或者
 
 `here --directory test`
 
-default directory is ./
+默认路径是 ./
 
-#### do not open the browser
+#### 不要默认打开浏览器
 
 `here -s`
 
-or
+或者
 
 `here --silent`
 
-#### verbose log
+#### 输出Log
 
 `here -v`
 
-or
+或者
 
 `here --verbose`
 
 
-#### watch file changes, once html,js,css file changed, reload pages
+#### 监听文件修改，一旦修改就刷新页面
 
 `here -w`
 
-or
+或者
 
 `here --watch`
 
+#### 更多支持
 
-[npm-version-image]: http://img.shields.io/npm/v/serve-here.svg?style=flat
-[npm-url]: https://www.npmjs.com/package/serve-here
-[npm-downloads-image]: http://img.shields.io/npm/dm/serve-here.svg?style=flat
+这里的服务支持SSI（服务器包含）
+
+	<!--#include virtual="path/to/file.html" -->
+
+这样会把外部文件给包含进来
+
+同时还支持`less`和`sass`文件的自动翻译，我访问一个`.css`文件，如果这个css文件不存在，则会自动查找对应的`.scss`和`.less`文件，并解析后返回
+
+[npm-version-image]: http://img.shields.io/npm/v/here-ssi.svg?style=flat
+[npm-url]: https://www.npmjs.com/package/here-ssi
+[npm-downloads-image]: http://img.shields.io/npm/dm/here-ssi.svg?style=flat
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
-[travis-image]: https://travis-ci.org/vivaxy/here.svg?branch=master
-[travis-url]: https://travis-ci.org/vivaxy/here
-[david-image]: http://img.shields.io/david/vivaxy/here.svg?style=flat
-[david-url]: https://david-dm.org/vivaxy/here
-[gittip-image]: https://img.shields.io/gittip/vivaxy.svg?style=flat
-[gittip-url]: https://www.gittip.com/vivaxy/
