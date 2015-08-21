@@ -7,7 +7,7 @@
     "here": "index.js"
   },
   "scripts": {
-    "test": "mocha ./test/test.js"
+    "preinstall": "node ./scripts/asksass.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,6 @@
     "chokidar": "^1.0.1",
     "jade": "^1.9.2",
     "iconv-lite": "^0.4.11",
-	"node-sass":"^3.2.0",
 	"less": "~1.7.5",
     "ws": "^0.7.2"
   },
