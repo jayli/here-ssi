@@ -3,7 +3,6 @@
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![MIT License][license-image]][license-url]
-[![Gittip][gittip-image]][gittip-url]
 
 [![](https://nodei.co/npm/here-ssi.png)](https://npmjs.org/package/here-ssi)
 
