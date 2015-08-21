@@ -8,6 +8,8 @@ var rl = readline.createInterface({
 });
 
 rl.question(" - Do you want to install node-sass? [y/N]", function(answer) {
+
+	console.log('asdfafa');
   if (answer.toLowerCase() == 'y') {
     console.log("node-sass is installing");
 

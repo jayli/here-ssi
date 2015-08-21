@@ -6,9 +6,6 @@
   "bin": {
     "here": "index.js"
   },
-  "scripts": {
-    "preinstall": "node ./scripts/asksass.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jayli/here-ssi.git"
@@ -33,6 +30,7 @@
     "jade": "^1.9.2",
     "iconv-lite": "^0.4.11",
 	"less": "~1.7.5",
+	"node-sass":"3.2.0",
     "ws": "^0.7.2"
   },
   "maintainers": [
