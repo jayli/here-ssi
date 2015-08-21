@@ -1,0 +1,45 @@
+{
+  "name": "here-ssi",
+  "version": "0.1.0",
+  "description": "支持ssi的here本地服务",
+  "homepage": "https://github.com/jayli/here-ssi",
+  "bin": {
+    "here": "index.js"
+  },
+  "scripts": {
+    "test": "mocha ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayli/here-ssi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jayli/here-ssi/issues"
+  },
+  "keywords": [
+    "static server",
+    "server",
+	"ssi"
+  ],
+  "author": {
+    "name": "拔赤"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "chokidar": "^1.0.1",
+    "jade": "^1.9.2",
+	"jayli-server","^0.0.22",
+    "ws": "^0.7.2"
+  },
+  "maintainers": [
+    {
+      "name": "bachi",
+      "email": "bachi@taobao.com"
+    }
+  ],
+  "directories": {},
+  "publish_time": 1432694173170
+}
