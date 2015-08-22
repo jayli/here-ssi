@@ -1,14 +1,14 @@
 # here-ssi
 
+![](https://gw.alicdn.com/tps/TB1ffYbJXXXXXbNXFXXXXXXXXXX-1044-292.png_400x400.jpg)
+
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![MIT License][license-image]][license-url]
 
 [![](https://nodei.co/npm/here-ssi.png)](https://npmjs.org/package/here-ssi)
 
-local static server
-
-本地静态服务器
+这是一款小巧好用的Node本地服务，用起来非常简单，安装后，直接在要启用服务的目录执行命令行`here`即可，支持SSI和less、sass文件编译输出
 
 by 拔赤
 
