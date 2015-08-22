@@ -1,6 +1,6 @@
 {
   "name": "here-ssi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "支持ssi的here本地服务",
   "homepage": "https://github.com/jayli/here-ssi",
   "bin": {
