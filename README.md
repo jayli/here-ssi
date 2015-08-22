@@ -14,7 +14,7 @@ by 拔赤
 
 ## 安装 
 
-`sudo npm install -g here-ssi`
+	sudo npm install -g here-ssi
 
 ## 使用
 
@@ -24,48 +24,48 @@ by 拔赤
 
 #### 指定端口 8888
 
-`here -p 8888`
+	here -p 8888
 
 或者
 
-`here --port 8888`
+	here --port 8888
 
 默认端口是 3000
 
 #### 制定服务启动的跟路径
 
-`here -d test`
+	here -d test
 
 或者
 
-`here --directory test`
+	here --directory test
 
 默认路径是 ./
 
 #### 不要默认打开浏览器
 
-`here -s`
+	here -s
 
 或者
 
-`here --silent`
+	here --silent
 
 #### 输出Log
 
-`here -v`
+	here -v
 
 或者
 
-`here --verbose`
+	here --verbose
 
 
 #### 监听文件修改，一旦修改就刷新页面
 
-`here -w`
+	here -w
 
 或者
 
-`here --watch`
+	here --watch
 
 #### 更多支持
 
@@ -73,9 +73,13 @@ by 拔赤
 
 	<!--#include virtual="path/to/file.html" -->
 
-这样会把外部文件给包含进来
+这样会把外部文件给包含进来，这里的SSI支持引用一个线上资源
 
 同时还支持`less`和`sass`文件的自动翻译，我访问一个`.css`文件，如果这个css文件不存在，则会自动查找对应的`.scss`和`.less`文件，并解析后返回
+
+**注意**
+
+本地服务返回的文本文件格式为utf-8，如果是gbk会自动转换为utf-8的文本输出
 
 [npm-version-image]: http://img.shields.io/npm/v/here-ssi.svg?style=flat
 [npm-url]: https://www.npmjs.com/package/here-ssi
