@@ -77,6 +77,18 @@ by 拔赤
 
 同时还支持`less`和`sass`文件的自动翻译，我访问一个`.css`文件，如果这个css文件不存在，则会自动查找对应的`.scss`和`.less`文件，并解析后返回
 
+为了兼容阿里内部项目，还支持TMS的引用（非阿里内部项目不建议使用）：
+
+	 <!--TMS:/rgn/mytaobao_bk.html:TMS-->  
+	
+或者
+
+	<!--TMS:/rgn/mytaobao_bk.html,utf-8,41:TMS-->
+
+此外还兼容 HTTP 标签使用
+
+	<!--HTTP:http://****.html,(utf-8|gbk):HTTP-->
+
 **注意**
 
 本地服务返回的文本文件格式为utf-8，如果是gbk会自动转换为utf-8的文本输出
