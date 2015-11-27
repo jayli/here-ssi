@@ -67,13 +67,15 @@ by 拔赤
 
 	here --watch
 
-#### 更多支持
+## 语法支持
+
+#### HTML 预发支持
 
 这里的服务支持SSI（服务器包含）
 
 	<!--#include virtual="path/to/file.html" -->
 
-这样会把外部文件给包含进来，这里的SSI支持引用一个线上资源
+这里的SSI支持引用一个线上资源
 
 同时还支持`less`和`sass`文件的自动翻译，我访问一个`.css`文件，如果这个css文件不存在，则会自动查找对应的`.scss`和`.less`文件，并解析后返回
 
@@ -88,6 +90,18 @@ by 拔赤
 此外还兼容 HTTP 标签使用
 
 	<!--HTTP:http://****.html,(utf-8|gbk):HTTP-->
+
+#### JS 语法支持
+
+CommonJS 规范
+
+	// a.js
+	exports.foo = 123;
+
+	// b.js
+	var foo = require('b.js').foo;
+
+引用`b.js`，server 输出合并后的`b.js`
 
 **注意**
 
