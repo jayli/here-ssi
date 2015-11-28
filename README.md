@@ -103,6 +103,21 @@ CommonJS 规范
 
 引用`b.js`，server 输出合并后的`b.js`
 
+JSX 语法支持
+
+	ReactDOM.render(
+		<h1 className="title">yyyyyy</h1>,
+		document.getElementById('example')
+	);
+
+翻译输出后：
+
+	ReactDOM.render(React.createElement(
+		"h1",
+		{ className: "title" },
+		"yyyyyy"
+	), document.getElementById('example'));
+
 **注意**
 
 本地服务返回的文本文件格式为utf-8，如果是gbk会自动转换为utf-8的文本输出
