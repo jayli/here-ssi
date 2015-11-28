@@ -8,9 +8,9 @@
 
 [![](https://nodei.co/npm/here-ssi.png)](https://npmjs.org/package/here-ssi)
 
-这是一款小巧好用的Node本地服务，用起来非常简单，安装后，直接在要启用服务的目录执行命令行`here`即可，支持SSI和less、sass文件编译输出
+这是一款小巧好用的Node本地服务，用起来非常简单，安装后，直接在要启用服务的目录执行命令行`here`即可，支持SSI和less、sass文件编译输出，支持内置 browserify 解析，支持 CommonJS 语法和 JSX 语法。
 
-by 拔赤
+by [拔赤](http://jayli.github.io)
 
 ## 安装 
 
