@@ -1,6 +1,6 @@
 {
   "name": "here-ssi",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "支持ssi的here本地服务",
   "homepage": "https://github.com/jayli/here-ssi",
   "bin": {
@@ -16,7 +16,9 @@
   "keywords": [
     "static server",
     "server",
-    "ssi"
+    "ssi",
+	"browserify",
+	"jsx"
   ],
   "author": {
     "name": "拔赤"
