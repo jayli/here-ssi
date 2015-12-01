@@ -103,6 +103,10 @@ CommonJS 规范
 
 引用`b.js`，server 输出合并后的`b.js`
 
+> 如果不希望 js 文件被解析为 CommonJS 和 JSX，则在引用 url 后加行开关`commonjs=false`即可，比如：
+
+	http://path/to/file.js?commonjs=fase
+
 JSX 语法支持
 
 	ReactDOM.render(
@@ -118,6 +122,8 @@ JSX 语法支持
 		"yyyyyy"
 	), document.getElementById('example'));
 
+> 如果不希望 js 被解析为 JSX，url后加上开关`commonjs=false`即可
+
 **注意**
 
 本地服务返回的文本文件格式为utf-8，如果是gbk会自动转换为utf-8的文本输出
@@ -128,4 +134,3 @@ JSX 语法支持
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 
-TODO: 兼容flexcombo
